@@ -39,7 +39,7 @@ window.ChaiBioTech.ngApp.service('StepMovementLeftService', [
                         this.currentMoveLeft = this.movedStepIndex = index;
                         StepPositionService.getPositionObject(this.kanvas.allStepViews);
                     }
-                return true;
+                    return true;
                 }
             },
 

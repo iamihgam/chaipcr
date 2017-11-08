@@ -167,11 +167,11 @@ angular.module("canvasApp").factory('moveStepRect', [
           StepMovementRightService.movedRightAction(this);
         }
 
-        if(StageMovementLeftService.shouldStageMoveLeft(this) !== null) {
+        //if(StageMovementLeftService.shouldStageMoveLeft(this) !== null) {
           
-          this.movedRightStageIndex = null; // Resetting
-          this.hideFirstStepBorderLeft();
-        }
+          //this.movedRightStageIndex = null; // Resetting
+          //this.hideFirstStepBorderLeft();
+        //}
         StepMoveVoidSpaceLeftService.checkVoidSpaceLeft(this);
       };
 
@@ -182,10 +182,10 @@ angular.module("canvasApp").factory('moveStepRect', [
           StepMovementLeftService.movedLeftAction(this);
         }
 
-        if(StageMovementRightService.shouldStageMoveRight(this) !== null) {
-          this.movedLeftStageIndex = null; // Resetting
-          this.hideFirstStepBorderLeft();
-        }
+        //if(StageMovementRightService.shouldStageMoveRight(this) !== null) {
+          //this.movedLeftStageIndex = null; // Resetting
+          //this.hideFirstStepBorderLeft();
+        //}
         StepMoveVoidSpaceRightService.checkVoidSpaceRight(this);
       };
 
