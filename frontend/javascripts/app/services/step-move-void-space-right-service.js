@@ -32,7 +32,7 @@ window.ChaiBioTech.ngApp.service('StepMoveVoidSpaceRightService', [
                 if(tStep.nextIsMoving) {
                     place = sI.kanvas.moveDots.left + 7;
                 }
-
+                console.log("Finally");
                 sI.currentDrop = sI.kanvas.allStageViews[index - 1].childSteps[length - 1];
                 sI.currentDropStage = sI.kanvas.allStageViews[index - 1]; // We need to insert the step as the last.
                 sI.verticalLine.setLeft(place);
@@ -53,7 +53,7 @@ window.ChaiBioTech.ngApp.service('StepMoveVoidSpaceRightService', [
                 // Context of this method is sI
                 
                 var abPlace = this.movement.left;
-                if(point[1] - point[0] > 25 && abPlace > point[0] && abPlace < (point[1] - 25)) {
+                if(abPlace > point[0] && abPlace < point[1]) {
                     that.verticalLineForVoidRight(this, index);
                     return true;
                 }
