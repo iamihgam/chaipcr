@@ -40,7 +40,6 @@ class ApidocsController < ActionController::Base
 		StagesController,
 		StepsController,
 		UsersController,
-		WellsController,
 		AmplificationDatum,
 		AmplificationOption,
     Device,
@@ -54,7 +53,6 @@ class ApidocsController < ActionController::Base
 		StatusModel,
     Step,
 		TemperatureLog,
-		Well,
 		User,
     self,
   ].freeze
